@@ -1,0 +1,39 @@
+.doing-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.doing-count:not(:last-child) {
+  margin-right: 30px;
+}
+.photos {
+  position: relative;
+}
+.title.doing {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 3px;
+  left: 0;
+  transform: translate(0, 0);
+  text-align: center;
+  padding: 27px;
+  opacity: 1;
+  transition: 250ms linear;
+
+  background: rgba(47, 48, 58, 0.8);
+  color: $additional-text-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

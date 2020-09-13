@@ -1,0 +1,147 @@
+.footer-section {
+  background-color: $footer-bg-color;
+  height: 252px;
+}
+.footer-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-info {
+  margin-left: 0;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+}
+.city {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 9px;
+  color: $additional-text-color;
+}
+.mail {
+  margin-bottom: 9px;
+  transition: $timing-animation;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: $timing-animation;
+  }
+}
+.phone {
+  margin-bottom: 0;
+  transition: $timing-animation;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: $timing-animation;
+  }
+}
+
+.invite {
+  margin-left: 0;
+}
+.join {
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: $additional-text-color;
+}
+.social-networks {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+}
+.button-link.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: $additional-text-color;
+  border-radius: 50%;
+  background-color: $primary-text-color;
+  transition: $timing-animation;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover,
+  &:focus {
+    width: 44px;
+    height: 44px;
+    background-color: $secondary-bg-color;
+    transition: $timing-animation;
+  }
+}
+
+.subscribe {
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: $additional-text-color;
+
+  &-mail {
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2779px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: $additional-text-color;
+
+    background-color: $footer-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+}
+
+.send {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  color: $additional-text-color;
+  background: $accent-color;
+}
+.plane {
+  margin-left: 10px;
+}

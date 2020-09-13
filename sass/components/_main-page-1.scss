@@ -1,0 +1,54 @@
+.hero {
+  margin-left: 0;
+  text-align: center;
+}
+/* Overlay */
+.overlay {
+  position: relative;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.start {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $additional-text-color;
+}
+.order {
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $additional-text-color;
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  cursor: pointer;
+  min-width: 200px;
+  border: 1px solid transparent;
+}

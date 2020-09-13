@@ -1,0 +1,41 @@
+.logo {
+  font-family: Raleway, sans-serif;
+}
+.first.logo {
+  color: $accent-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.second.logo- {
+  &header {
+    color: $title-text-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+  }
+  &footer {
+    color: $additional-text-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+  }
+}
+.nav .logo.link {
+  display: flex;
+  margin-left: 0;
+  margin-right: 85px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.full-logo {
+  margin-bottom: 20px;
+}

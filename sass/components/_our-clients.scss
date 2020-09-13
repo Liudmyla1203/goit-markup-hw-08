@@ -1,0 +1,27 @@
+.clients-count {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.clients-image:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-icons {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  justify-content: center;
+  align-items: center;
+  fill: $clients-color;
+  transition: $timing-animation;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+    transition: $timing-animation;
+  }
+}

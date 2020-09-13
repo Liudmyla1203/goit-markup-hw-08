@@ -1,0 +1,243 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav {
+  //  @media screen and (min-width: $mobile) {
+  //   width: 480px;
+  // }
+  // @media screen and (min-width: $tablet) {
+  //   width: 678px;
+  // }
+
+  @media screen and (min-width: 480px) {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.site-nav.list {
+  // display: flex;
+  color: $title-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.header-items {
+  .link {
+    // position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+
+    transition: $timing-animation;
+
+    // @media screen and (min-width: 480px) {
+    //   padding: 10px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+      position: relative;
+    }
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav {
+  // display: flex;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.header-address {
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.connection {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $title-text-color;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .connection-items + .connection-items {
+    @media screen and (min-width: 480px) {
+      margin-left: 0px;
+      padding-top: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+      padding-top: 30px;
+    }
+  }
+}
+
+.connection-items {
+  // padding-bottom: 32px;
+  // padding-top: 32px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  // @media screen and (min-width: 480px) {
+  //     padding-bottom: 32px;
+}
+.superscription {
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-text-color;
+  fill: $primary-text-color;
+  transition: $timing-animation;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.superscription-header {
+  margin-right: 10px;
+}
+.site-nav {
+  .link {
+    // display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    // @media screen and (min-width: 480px) {
+    //   margin-top: 20px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+  .link.current {
+    // position: relative;
+    color: $accent-color;
+
+    @media screen and (min-width: 1200px) {
+      position: relative;
+    }
+  }
+}
+
+.current.header-link::after {
+  content: "";
+  // position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: $secondary-bg-color;
+
+  opacity: 1;
+  transition: $timing-animation;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+  }
+}
+.header-link {
+  &::after {
+    content: "";
+    opacity: 0;
+    // position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: $secondary-bg-color;
+    transition: $timing-animation;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    content: "";
+
+    // position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: $secondary-bg-color;
+
+    opacity: 1;
+    transition: $timing-animation;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+  }
+}
