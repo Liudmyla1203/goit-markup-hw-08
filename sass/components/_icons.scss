@@ -11,7 +11,9 @@
   @media screen and (min-width: 480px) {
     text-align: center;
   }
-
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
   @media screen and (min-width: 1200px) {
     text-align: start;
   }
@@ -26,8 +28,13 @@
   padding-left: 15px;
   padding-right: 15px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 .item {
@@ -37,6 +44,16 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 0;
+    margin-left: 0;
   }
 
   @media screen and (min-width: 1200px) {

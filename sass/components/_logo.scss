@@ -37,5 +37,17 @@
 }
 
 .full-logo {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }

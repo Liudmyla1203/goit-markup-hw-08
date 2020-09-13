@@ -50,6 +50,10 @@ li {
 .container.distance {
   margin-bottom: 94px;
 }
+.products {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .names {
   color: var(--title-text-color);
   font-style: normal;
