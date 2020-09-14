@@ -4,9 +4,22 @@
 }
 .projects-nav {
   display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 55px;
-  justify-content: center;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 .button {
   color: $title-text-color;
@@ -24,26 +37,6 @@
   transition: $timing-animation;
 }
 
-.button-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  fill: $primary-text-color;
-  border-radius: 50%;
-  transition: $timing-animation;
-
-  &:hover,
-  &:focus {
-    width: 44px;
-    height: 44px;
-    background-color: $secondary-bg-color;
-    fill: $additional-text-color;
-    transition: $timing-animation;
-  }
-}
-
 .projects {
   color: $title-text-color;
   font-style: normal;
@@ -52,6 +45,12 @@
   line-height: 26px;
   letter-spacing: 0.03em;
 }
-.projects-button:not(:last-child) {
-  margin-right: 8px;
+.projects-button {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 15px;
+  }
 }

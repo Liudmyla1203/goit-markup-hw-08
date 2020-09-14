@@ -139,3 +139,22 @@
 .counting-networks:not(:last-child) {
   margin-right: 10px;
 }
+.button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: $primary-text-color;
+  border-radius: 50%;
+  transition: $timing-animation;
+
+  &:hover,
+  &:focus {
+    width: 44px;
+    height: 44px;
+    background-color: $secondary-bg-color;
+    fill: $additional-text-color;
+    transition: $timing-animation;
+  }
+}
